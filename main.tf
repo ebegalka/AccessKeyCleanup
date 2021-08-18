@@ -101,7 +101,7 @@ resource "aws_cloudwatch_log_group" "tf_accesskeycleanup_cloudwatch_lambda_log_g
 //TRIGGERING
 //
 
-/*
+
 resource "aws_cloudwatch_event_rule" "tf_accesskeycleanup_rule_every_five_minutes" {
     name = "every-five-minutes"
     description = "Fires every five minutes"
@@ -121,4 +121,3 @@ resource "aws_lambda_permission" "tf_accesskeycleanup_allow_cloudwatch_to_call_e
     principal = "events.amazonaws.com"
     source_arn = "${aws_cloudwatch_event_rule.tf_accesskeycleanup_rule_every_five_minutes.arn}"
 }
-*/
